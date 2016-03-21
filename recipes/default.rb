@@ -27,6 +27,7 @@ ark 'archiva' do
   version     node['archiva']['version']
   prefix_root node['archiva']['install_path']
   prefix_home node['archiva']['install_path']
+  prefix_bin  "#{node['archiva']['home']}/bin"
   home_dir    node['archiva']['home']
   checksum    node['archiva']['checksum']
   owner       node['archiva']['user_owner']
